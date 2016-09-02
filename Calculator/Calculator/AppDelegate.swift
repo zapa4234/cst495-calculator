@@ -1,7 +1,7 @@
 //
 //  AppDelegate.swift
 //  Calculator
-//
+//  stuffs
 //  Created by Gabriel Zapata on 9/2/16.
 //  Copyright © 2016 CSUMB. All rights reserved.
 //
