@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Foundation
+
 
 
 class ViewController: UIViewController {
@@ -45,7 +47,9 @@ class ViewController: UIViewController {
         case "√": performOperation { sqrt($0)} //need to do sin, cos, pi
         case "sin": performOperation { sqrt($0)} // need help with layout bugs
         case "cos": performOperation { sqrt($0)} // assignment 1 due: sept 15
-        //case "π":
+        //case "π": displayValue = M_PI
+            //enter()
+        //var theCosOfZero: Double = Double(cos(0))
         default: break
         }
     }
@@ -57,7 +61,7 @@ class ViewController: UIViewController {
             }
         }
         private func performOperation(operation: Double ->  Double){
-            if operandStack.count >= 2 {
+            if operandStack.count >= 1 {
                 displayValue = operation(operandStack.removeLast())
                 enter()
             }
