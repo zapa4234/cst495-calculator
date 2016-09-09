@@ -42,9 +42,9 @@ class ViewController: UIViewController {
         case "÷": performOperation {$0 / $1}
         case "+": performOperation {$0 + $1}
         case "-": performOperation {$0 - $1}
-        case "√": performOperation { sqrt($0)}
-        case "sin": performOperation { sqrt($0)}
-        case "cos": performOperation { sqrt($0)}
+        case "√": performOperation { sqrt($0)} //need to do sin, cos, pi
+        case "sin": performOperation { sqrt($0)} // need help with layout bugs
+        case "cos": performOperation { sqrt($0)} // assignment 1 due: sept 15
         //case "π":
         default: break
         }
