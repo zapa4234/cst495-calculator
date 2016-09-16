@@ -115,9 +115,14 @@ class ViewController: UIViewController {
     @IBAction func decimal(sender: UIButton) {
         //figure out how to add the decimal to make it a double to allow the user
         //to add decimals to the previous number
-     
+        
+        if(display.text!.containsString("."))
+        {
+            return
+        }else{
+        
         display.text = display.text! + "."
-      
+        }
         
         
         
