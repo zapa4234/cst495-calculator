@@ -13,6 +13,9 @@ import Foundation
 
 class ViewController: UIViewController {
 
+    
+    
+    @IBOutlet weak var historyDisplay: UILabel!
    
     @IBOutlet weak var display: UILabel!
     
@@ -27,11 +30,42 @@ class ViewController: UIViewController {
             display.text = digit
             userIsInTheMiddleOfTypingANumber = true
         }
-        
         //print("digit = \(digit)")
+  
+    }
+    
+    
+    @IBAction func pi(sender: UIButton) {
+        
+        if display.text != "0"{
+            enter()
+            display.text = "\(M_PI)"
+            enter()
+            
+        }else{
+            display.text = "\(M_PI)"
+            enter()
+        }
+        
+        userIsInTheMiddleOfTypingANumber = true
+        
+    }
+    
+    
+    @IBAction func clear(sender: UIButton) {
+        
+        if display.text != "0"{
+            display.text = "0"
+            operandStack.removeAll()
+        }
+        else{
+            operandStack.removeAll()
+        }
         
         
     }
+    
+    
     @IBAction func operate(sender: UIButton) {
         let operation = sender.currentTitle!
         
@@ -45,8 +79,8 @@ class ViewController: UIViewController {
         case "+": performOperation {$0 + $1}
         case "-": performOperation {$0 - $1}
         case "√": performOperation { sqrt($0)} //need to do sin, cos, pi
-        case "sin": performOperation { sqrt($0)} // need help with layout bugs
-        case "cos": performOperation { sqrt($0)} // assignment 1 due: sept 15
+        case "sin": performOperation { Double(sin($0))} // need help with layout bugs
+        case "cos": performOperation { Double(cos($0))} // assignment 1 due: sept 15
         //case "π": displayValue = M_PI
             //enter()
         //var theCosOfZero: Double = Double(cos(0))
@@ -67,6 +101,7 @@ class ViewController: UIViewController {
             }
         }
         
+
         
     var operandStack = Array<Double>()
     
@@ -77,6 +112,16 @@ class ViewController: UIViewController {
         print("operandstack = \(operandStack)")
     }
     
+    @IBAction func decimal(sender: UIButton) {
+        //figure out how to add the decimal to make it a double to allow the user
+        //to add decimals to the previous number
+     
+        display.text = display.text! + "."
+      
+        
+        
+        
+    }
     var displayValue: Double {
         get{
             return NSNumberFormatter().numberFromString(display.text!)!.doubleValue
