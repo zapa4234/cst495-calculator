@@ -75,14 +75,6 @@
                                     <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rCQ-y7-UAx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iMU-Af-2DQ">
-                                <frame key="frameInset" minX="138" minY="550.5" width="102.5" height="41.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="0"/>
-                                <connections>
-                                    <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lOa-mR-oLM"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRk-5o-QZn">
                                 <frame key="frameInset" minX="249" minY="550.5" width="102" height="41.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -188,7 +180,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGI-pr-0sK">
-                                <frame key="frameInset" minX="28" minY="550.5" width="102.5" height="41.5"/>
+                                <frame key="frameInset" minX="138" minY="551" width="102.5" height="41.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="wGI-pr-0sK" secondAttribute="height" multiplier="30:41" id="3Bh-gA-Gpf"/>
                                 </constraints>
@@ -331,6 +323,14 @@
                                     </mask>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iMU-Af-2DQ">
+                                <frame key="frameInset" minX="28" minY="551" width="102.5" height="41.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="0"/>
+                                <connections>
+                                    <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lOa-mR-oLM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
