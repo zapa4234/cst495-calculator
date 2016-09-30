@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
 //  Calculator
-//  stuffs
-//  Created by Gabriel Zapata on 9/2/16.
-//  Copyright © 2016 CSUMB. All rights reserved.
+//
+//  Created by Angelo Wong on 2/22/16.
+//  Copyright © 2016 Stanford. All rights reserved.
 //
 
 import UIKit
