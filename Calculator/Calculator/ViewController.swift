@@ -56,7 +56,6 @@ class ViewController: UIViewController {
                 } else {
                     displayValue = nil
                 }
-                opHistory.text = brain.description
             }
         default: break
         }
@@ -80,7 +79,6 @@ class ViewController: UIViewController {
                 appendDispEquals()
             }
         }
-        opHistory.text = brain.description
         
 
     }
