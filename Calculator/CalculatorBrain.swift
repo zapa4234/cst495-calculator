@@ -1,7 +1,6 @@
 //  CalculatorBrain.swift
 //  gabriel z.
 
-
 import Foundation
 
 class CalculatorBrain {
@@ -75,7 +74,6 @@ class CalculatorBrain {
         learnOp(Op.ClearOperation("C"))
         learnOp(Op.PiOperation("π"))
     }
-
     typealias PropertyList = AnyObject
     
     var program: PropertyList {
@@ -96,7 +94,6 @@ class CalculatorBrain {
             }
         }
     }
-    
     private func evaluateAndReportErrors(ops: [Op]) -> (String?, result: Double?, remainingOps: [Op]) {
         if !ops.isEmpty {
             var remainingOps = ops
@@ -158,7 +155,6 @@ class CalculatorBrain {
             return "\(key) not set"
         }
     }
-    
     private func evaluate(ops: [Op]) -> (result: Double?, remainingOps: [Op]) {
         if !ops.isEmpty {
             var remainingOps = ops
@@ -187,8 +183,6 @@ class CalculatorBrain {
                         return (operation(operand1, operand2), op2Evaluation.remainingOps)
                     }
                 }
-                
-                
             case .ClearOperation(_):
                 opStack = []
                 variableValues = [:]
